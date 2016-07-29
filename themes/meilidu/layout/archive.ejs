@@ -1,15 +1,52 @@
-<% if (page.current > 2){ %>
-	<span class="different-posts different-posts_earlier">- <a href="/page/<%= page.current - 1 %>">earlier posts</a> -</span>
-<% } else if (page.current === 2) { %>
-	<span class="different-posts different-posts_earlier">- <a href="/">earlier posts</a> -</span>
-<% } %>
+<h1>Archive</h1>
 
-<% page.posts.each(function(post) { %>
+<% var year = new Date().getFullYear() %>
 
-	<%- partial('post', {page: post, archive: true}) %>
+<ul class="archive">
+	
+</ul>
 
-<% }) %>
+<ul class="archive">
 
-<% if (page.total > page.current){ %>
-	<span class="different-posts">- <a href="/page/<%= page.current + 1 %>">more posts</a> -</span>
-<% } %>
+
+	<li class="archive__year archive__expendable">
+		<span>2016</span>
+		<ul>
+			<li class="archive__month archive__expendable">
+				<span>August</span>
+				<ul>
+					<li class="archive__entry"><a href="#">Headline</a></li>
+					<li class="archive__entry"><a href="#">Blog post</a></li>
+				</ul>
+			</li>
+			<li class="archive__month archive__expendable archive__expendable_collapsed">
+				<span>July</span>
+				<ul>
+					<li class="archive__entry"><a href="#">Headline</a></li>
+					<li class="archive__entry"><a href="#">Blog post</a></li>
+				</ul>
+			</li>
+			<li class="archive__month archive__expendable archive__expendable_collapsed">
+				<span>June</span>
+				<ul>
+					<li class="archive__entry"><a href="#">Headline</a></li>
+					<li class="archive__entry"><a href="#">Blog post</a></li>
+				</ul>
+			</li>
+		</ul>
+	</li>
+	<li class="archive__year archive__expendable archive__expendable_collapsed">
+		<span>2015</span>
+		<ul>
+			<li class="archive__month archive__expendable">
+				<span>August</span>
+				<ul>
+					<li class="archive__entry"><a href="#">Headline</a></li>
+					<li class="archive__entry"><a href="#">Blog post</a></li>
+				</ul>
+			</li>
+			<li class="archive__month archive__expendable"><span>July</span></li>
+			<li class="archive__month archive__expendable"><span>June</span></li>
+		</ul>
+	</li>
+</ul>

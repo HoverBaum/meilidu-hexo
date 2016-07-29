@@ -1,1 +1,18 @@
-<%- partial('archive') %>
+<% if (page.current > 2){ %>
+	<span class="different-posts different-posts_earlier">- <a href="/page/<%= page.current - 1 %>">earlier posts</a> -</span>
+<% } else if (page.current === 2) { %>
+	<span class="different-posts different-posts_earlier">- <a href="/">earlier posts</a> -</span>
+<% } %>
+
+<% page.posts.each(function(post) { %>
+
+	<%- partial('post', {page: post, archive: true}) %>
+
+<% }) %>
+
+<% if (page.total > page.current){ %>
+	<span class="different-posts">- <a href="/page/<%= page.current + 1 %>">more posts</a> -</span>
+<% } %>
+<% if(page.current === page.total) { %>
+	<span class="different-posts">- end of posts -</span>
+<% } %>
