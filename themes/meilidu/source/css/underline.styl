@@ -1,0 +1,28 @@
+text-underline-crop($background)
+  text-shadow: 0.03em 0 $background, -0.03em 0 $background, 0 0.03em $background, 0 -0.03em $background, 0.06em 0 $background, -0.06em 0 $background, 0.09em 0 $background, -0.09em 0 $background, 0.12em 0 $background, -0.12em 0 $background, 0.15em 0 $background, -0.15em 0 $background
+text-background($color-bg, $color-text)
+  background-image: linear-gradient($color-text, $color-text)
+  background-size: 1px 1px
+  background-repeat: repeat-x
+  background-position: 0% 95%
+text-selection($selection)
+  &::selection
+    text-underline-crop($selection)
+    background: $selection
+  &::-moz-selection
+    text-underline-crop($selection)
+    background: $selection
+link-underline($background, $text, $selection)
+  text-underline-crop($background)
+  text-background($background, $text)
+  text-selection($selection)
+  color: $text
+  text-decoration: none
+  *,
+  *:after,
+  &:after,
+  *:before,
+  &:before
+    text-shadow: none
+  &:visited
+    color: $text

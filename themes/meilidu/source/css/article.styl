@@ -1,0 +1,124 @@
+@import "variables"
+
+article
+	width: contentWidth
+	text-align: justify
+	margin: 0 2rem
+	margin-bottom: 2rem
+	position: relative
+
+h1,
+h2,
+strong
+	color: highlightColor
+
+h1 a,h2 a,h3 a,h4 a,h5 a {
+	font-style: normal
+}
+
+h1,h2,h3,h4,h5
+	margin-top: 1em
+	margin-bottom: 1rem
+	text-align: left
+
+article a
+	link-underline(backgroundColor, textColor, textColor)
+
+article:hover p a
+	link-underline(backgroundColor, mainColor, mainColor)
+
+article h1 a:hover
+	link-underline(backgroundColor, highlightColor, highlightColor)
+
+article h1 a
+	background: inherit
+
+// Figures
+
+img
+	margin: 2rem 0
+	max-width: contentWidth
+
+.figure__caption
+	text-align: center
+	font-size: 0.8em
+
+// Lists
+
+ul, ol
+	margin 0
+
+// Blockquotes
+
+blockquote
+	color: highlightColor
+	border-left: 0.7rem solid greyishBlue
+	margin: 2rem 1rem
+	padding: 0.5rem 1rem
+	quotes: "\201C""\201D""\2018""\2019"
+
+blockquote:before
+	color: greyishBlue
+	content: "\201C" /*Unicode for Left Double Quote*/
+	font-size: 4em
+	line-height: 0.1em
+	margin-right: 0.25em
+	vertical-align: -0.4em
+
+blockquote p
+	display: inline
+	font-family: "Noto Serif", serif
+
+blockquote cite
+	&:before
+		content: "\2014 \2009"
+
+article:hover blockquote a
+	color: currentColor
+
+article blockquote:hover a
+	link-underline(backgroundColor, mainColor, mainColor)
+
+// Tables
+
+cellPadding = 0.8rem
+
+table
+	width: 100%
+	border-spacing: 0
+	th
+		border-bottom: 1px solid highlightColor
+		padding: cellPadding
+	td
+		padding: cellPadding
+		border-bottom: 1px solid lighten(highlightColor, 80%)
+
+
+// Article infos
+
+.article__infos
+	font-size: 0.7rem
+	position: absolute
+	left: -8.5rem
+	width: 8rem
+	text-align: right
+
+.article__infos a
+	text-shadow: none
+	background: inherit
+
+@media only screen and (max-width: breakMediumEnd)
+	.article__infos
+		position: relative
+		left: 0
+		text-align: left
+		width: auto
+
+	.article__infos br
+		display: none
+
+	.article__infos span
+		margin-right: 1em
+
+.post__info span
+	margin-right: 1em

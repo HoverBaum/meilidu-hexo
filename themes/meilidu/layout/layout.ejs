@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title><%= config.title %></title>
+	<link rel="stylesheet" href="/css/style.css" />
+</head>
+
+<body>
+
+	<header class="header">
+		<h1 class="header__title"><a href="<%- config.url %>">MeiliDu</a></h1>
+		<h2 class="header__subtitle">Untertitel</h2>
+	</header>
+
+	<main>
+		<%- body %>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer__element">
+				<ul class="footer-links">
+					<li class="footer-links__link"><a href="#">About</a></li>
+					<li class="footer-links__link"><a href="#">The author</a></li>
+					<li class="footer-links__link"><a href="#">more links</a></a></li>
+				</ul>
+			</div>
+			<div class="footer__element">
+				<p>Hi there, <br />welcome to my Blog glad you found it. Have a look around, will you?</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

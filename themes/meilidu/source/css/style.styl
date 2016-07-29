@@ -1,0 +1,76 @@
+@import "variables"
+@import "headers"
+@import "underline"
+@import "scrollbar"
+@import "article"
+@import "header"
+@import "footer"
+
+@font-face
+	font-family: "Noto Sans"
+	src: url("fonts/Noto_Sans/NotoSans-Regular.ttf")
+	font-weight: normal
+
+@font-face
+	font-family: "Noto Sans"
+	src: url("fonts/Noto_Sans/NotoSans-Italic.ttf")
+	font-style: italic
+
+@font-face
+	font-family: "Noto Serif"
+	src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf")
+	font-style: normal
+
+body,
+html
+	padding: 0
+	margin: 0
+	background-color: backgroundColor
+
+body
+	font-family: "Noto Sans"
+	color: textColor
+	display: flex
+	flex-direction: column
+
+main
+	width: 100%
+	padding-bottom: 4rem
+	display: flex
+	flex-grow: 1
+	flex-direction: row
+	justify-content: center
+	flex-wrap: wrap
+
+main > h1
+	width: 100%
+	text-align: center
+
+a
+	text-decoration: none
+	color: textColor
+
+a:visited
+	color: currentColor
+
+a:hover
+	link-underline(backgroundColor, mainColor, mainColor)
+
+
+//Center articles even on huge screen
+@media screen and (min-width: 100 rem)
+	article
+		margin-left: 20rem
+		margin-right: 20rem
+
+.different-posts
+	display: block
+	width: contentWidth
+	text-align: center
+	& a
+		link-underline(backgroundColor, textColor, textColor)
+	& a:hover
+		link-underline(backgroundColor, mainColor, mainColor)
+
+.different-posts.different-posts_earlier
+	margin-top: 2rem

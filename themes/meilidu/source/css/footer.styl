@@ -1,0 +1,50 @@
+@import "variables"
+@import "underline"
+
+footerBackgroundColor = textColor
+footerTextColor = backgroundColor
+
+.footer
+	background-color: footerBackgroundColor
+	color: footerTextColor
+	padding: 2rem 0
+	display: flex
+	flex-direction: row
+	justify-content: center
+
+.footer p
+	margin: 0
+
+.footer-content
+	display: flex
+	flex-direction: row
+	justify-content: flex-start
+	flex-wrap: wrap
+	width: contentWidth
+
+.footer__element
+	padding: 1rem
+	width: (contentWidth / 4)
+	box-sizing: border-box
+
+@media only screen and (max-width: breakMobile)
+	.footer__element
+		width: 100%
+		font-size: 2rem
+
+@media only screen and (min-width: breakMediumStart) and (max-width: breakMediumEnd)
+	.footer__element
+		width: 50%
+		font-size: 2rem
+
+.footer-links
+	margin: 0
+	padding: 0
+
+.footer-links__link
+	list-style-type: none
+
+.footer-links__link a
+	link-underline(footerBackgroundColor, footerTextColor, footerTextColor)
+	&:hover
+		link-underline(footerBackgroundColor, mainColor, mainColor)
