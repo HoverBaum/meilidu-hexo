@@ -18,7 +18,7 @@
 
 	<% if(page.excerpt !== '' && locals.archive) { %>
 		<%- page.excerpt %>
-		<a href="/<%= page.path %>"><%- theme.readMore %></a>
+		<p><a href="/<%= page.path %>"><%- theme.readMore %></a></p>
 	<% } else { %>
 		<%- page.content %>
 	<% } %>

@@ -3,3 +3,4 @@ widgets:
 - greeting
 
 readMore: ...read more
+fancybox: true
