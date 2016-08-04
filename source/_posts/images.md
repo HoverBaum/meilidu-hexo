@@ -1,5 +1,8 @@
 title: Images
 date: 2013-12-26 22:46:49
+tags:
+  - first
+  - post
 ---
 
 This is a image test post.

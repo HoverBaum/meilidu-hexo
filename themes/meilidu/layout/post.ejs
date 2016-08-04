@@ -14,6 +14,15 @@
 			  separator: ' > '
 			}) %>
 		</span>
+		<span class="article__tags">
+			<% if (page.tags && page.tags.length){ %>
+			  <%- list_tags(page.tags, {
+			    show_count: false,
+			    class: 'article__tag',
+				style: 'none'
+			  }) %>
+			<% } %>
+		</span>
 	</div>
 
 	<% if(page.excerpt !== '' && locals.archive) { %>
