@@ -1,6 +1,14 @@
 widgets:
-- site_links
-- greeting
+ - site_links
+ - greeting
+
+rss: /atom.xml
 
 readMore: ...read more
 fancybox: true
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
+  hub:
