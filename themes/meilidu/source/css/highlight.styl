@@ -5,7 +5,7 @@
 highlight-background = backgroundColor
 highlight-current-line = #393939
 highlight-selection = #515151
-highlight-foreground = #cccccc
+highlight-foreground = #333
 highlight-comment = #999999
 highlight-red = #f2777a
 highlight-orange = #f99157
@@ -14,6 +14,7 @@ highlight-green = #99cc99
 highlight-aqua = #66cccc
 highlight-blue = #6699cc
 highlight-purple = #cc99cc
+color-border = lighten(greyishBlue, 60%)
 
 $code-block
   background: highlight-background
@@ -28,8 +29,12 @@ $line-numbers
   color: #666
   font-size: 0.85em
 
-.highlight.line.marked
-  background-color: highlight-selection
+.highlight .line.marked
+  background-color: lighten(greyishBlue, 90%)
+
+//HACK this is so super hacky but it gets the numbers to align.
+.highlight .line
+	min-height: 22px
 
 article
   pre, code
