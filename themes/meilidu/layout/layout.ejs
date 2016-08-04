@@ -9,6 +9,9 @@
 	<% if (theme.rss){ %>
       <link rel="alternate" href="<%- theme.rss %>" title="<%= config.title %>" type="application/atom+xml">
     <% } %>
+	<% if (theme.fancybox){ %>
+		<%- js('fancybox/jquery.js') %>
+	<% } %>
 </head>
 
 <body>
@@ -24,7 +27,7 @@
 
 	<%- partial('footer') %>
 
-	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
 	<% if (theme.fancybox){ %>
 	  <%- css('fancybox/jquery.fancybox') %>
 	  <%- js('fancybox/jquery.fancybox.pack') %>
