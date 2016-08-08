@@ -6,5 +6,6 @@ todo
 
 - [ ] image captions
 - [x] code highlight theme
-- [ ] archive tags pages
+- [x] archive pages
+- [ ] tags page
 - [x] add hover highlight to tables

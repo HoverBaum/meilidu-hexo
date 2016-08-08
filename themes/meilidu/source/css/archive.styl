@@ -1,0 +1,54 @@
+@import "variables"
+@import "underline"
+
+.archive
+	width: contentWidth
+	padding: 3rem
+	display: block
+	font-size: 2.369rem
+
+.archive li
+	list-style-type: none
+	cursor: pointer
+
+.archive__year > span
+	&:hover
+		link-underline(backgroundColor, textColor, textColor)
+
+monthColor = lighten(textColor, 10%)
+
+.archive__month
+	font-family: fonstSerif
+	font-size: 1.777rem
+	color: monthColor
+
+.archive__month > span
+	&:hover
+		link-underline(backgroundColor, monthColor, monthColor)
+
+entryColor = lighten(textColor, 20%)
+
+.archive .archive__entry
+	font-family: fontsSans
+	list-style-type: disc
+	font-size: 1.333rem
+	margin-left: 1rem
+
+.archive__entry > a
+	color: entryColor
+	&:hover
+		link-underline(backgroundColor, entryColor, entryColor)
+
+.archive__expendable
+	margin-top: 0.5em
+	height: auto
+	&:before
+		content: "▻"
+		display: inline-block
+		transform(rotate(90deg))
+
+.archive__expendable.archive__expendable_collapsed
+	height: 1.3em
+	overflow-y: hidden
+	&:before
+		transform: (rotate(0deg))
