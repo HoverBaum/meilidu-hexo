@@ -13,13 +13,14 @@
 			  style: 'none',
 			  separator: ' > '
 			}) %>
-		</span>
+		</span><br />
 		<span class="article__tags">
 			<% if (page.tags && page.tags.length){ %>
 			  <%- list_tags(page.tags, {
 			    show_count: false,
 			    class: 'article__tag',
-				style: 'none'
+				style: 'none',
+				separator: ' '
 			  }) %>
 			<% } %>
 		</span>
