@@ -1,4 +1,5 @@
 @import "variables"
+@import "underline"
 
 // https://github.com/chriskempson/tomorrow-theme
 //highlight-background = #2d2d2d
@@ -15,22 +16,27 @@ highlight-aqua = #66cccc
 highlight-blue = #6699cc
 highlight-purple = saturation(#cc99cc, 75%)
 color-border = lighten(greyishBlue, 60%)
+code-background = darken(backgroundColor, 5%)
 
 $code-block
-  background: highlight-background
-  padding: 15px article-padding
-  border-style: solid
-  border-color: color-border
-  border-width: 1px 0
+  background: code-background
+  padding: 15px
   overflow: auto
   color: highlight-foreground
+  a
+	  link-underline(code-background, mainColor, mainColor)
 
 $line-numbers
   color: #666
   font-size: 0.85em
 
+code
+	background-color: code-background
+	border-radius: 0.2em
+
+
 .highlight .line.marked
-  background-color: lighten(greyishBlue, 90%)
+  background-color: darken(code-background, 10%)
 
 //HACK this is so super hacky but it gets the numbers to align.
 .highlight .line
@@ -62,13 +68,13 @@ article
       border: none
       padding: 0
     figcaption
-      clearfix()
       font-size: 0.85em
       color: highlight-comment
       line-height: 1em
       margin-bottom: 1em
-      a
-        float: right
+      display: flex
+      flex-direction: row
+      justify-content: space-between
     .gutter pre
       @extend $line-numbers
       text-align: right
@@ -104,11 +110,6 @@ article
         padding: 0
         margin-top: 1em
         margin-left: article-padding
-        a
-          color: color-link
-          font-weight: normal
-          &:hover
-            text-decoration: underline
 
 pre
   .comment
@@ -126,25 +127,25 @@ pre
   .css .id
   .css .class
   .css .pseudo
-    color: highlight-red
+    color: #a626a4
   .number
   .preprocessor
   .built_in
   .literal
   .params
   .constant
-    color: highlight-orange
+    color: #986801
   .class
   .ruby .class .title
   .css .rules .attribute
-    color: highlight-green
+    color: #50a14f
   .string
   .value
   .inheritance
   .header
   .ruby .symbol
   .xml .cdata
-    color: highlight-green
+    color: #50a14f
   .css .hexcolor
     color: highlight-aqua
   .function
@@ -155,7 +156,7 @@ pre
   .perl .sub
   .javascript .title
   .coffeescript .title
-    color: highlight-blue
+    color: #a626a4
   .keyword
   .javascript .function
-    color: highlight-purple
+    color: #a626a4
