@@ -15,3 +15,6 @@ feed:
   path: atom.xml
   limit: 20
   hub:
+
+tag_generator:
+  per_page: 10

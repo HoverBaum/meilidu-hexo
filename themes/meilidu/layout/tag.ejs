@@ -1,0 +1,22 @@
+<% const tag = page.path.split('/')[1] %>
+
+<h1>#<%- tag %></h1>
+
+
+
+<ul class="archive">
+		<li class="archive__year archive__expendable archive__expendable_disabled">
+			<span><%- tag %></span>
+			<ul>
+			<% site.posts.forEach(post => { %>
+				<% for(let key in post.tags.data) { %>
+					<% let postTag = post.tags.data[key].name %>
+					<% if(postTag === tag) { %>
+						<li class="archive__entry"><a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
+					<% } %>
+
+				<% } %>
+			<% }) %>
+			</ul>
+		</li>
+</ul>
