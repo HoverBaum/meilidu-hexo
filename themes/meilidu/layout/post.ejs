@@ -40,7 +40,7 @@
 
 	<% if(page.excerpt !== '' && locals.archive) { %>
 		<%- page.excerpt %>
-		<p><a href="/<%= page.path %>"><%- theme.readMore %></a></p>
+		<p><a class="article__read-more-link" href="/<%= page.path %>"><%- theme.readMore %></a></p>
 	<% } else { %>
 		<%- page.content %>
 	<% } %>
