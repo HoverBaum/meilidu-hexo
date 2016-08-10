@@ -9,3 +9,4 @@ todo
 - [x] archive pages
 - [ ] tags page
 - [x] add hover highlight to tables
+- [ ] page layout
