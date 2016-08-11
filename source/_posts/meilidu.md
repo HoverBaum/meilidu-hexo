@@ -9,4 +9,4 @@ tags:
 
 Welcome to MeiliDu, *A beautiful read* indeed.
 
-This theme is focused around your readers reading your posts. It is created for text and code heavy posts. Find it on [GitHub](https://github.com/HoverBaum/meilidu-hexo).
+This theme is focused around your readers reading your posts. It is created for text and code heavy posts, brightened by images. Find it on [GitHub](https://github.com/HoverBaum/meilidu-hexo).
