@@ -4,10 +4,6 @@
 
 A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts. Check out the [Demo](https://meilidu.github.io/)
 
-**ALMOST** a production ready version.
-TODO:
-- [ ] Use time format from config file
-
 ![MeiliDu responsive showcase.](gitHubAssets/showcase.png)
 
 ## Get started
