@@ -2,4 +2,92 @@
 
 > a beautiful read
 
-A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts.
+A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts. Check out the [Demo](https://meilidu.github.io/)
+
+![MeiliDu responsive showcase.](gitHubAssets/showcase.png)
+
+## Get started
+
+1. Get the [latest release](https://github.com/HoverBaum/meilidu-hexo/releases/latest), simply download the file **meilidu.zip**.
+2. Unpack it into your **themes** folder. (You should now have a folder in your themes folder named "meilidu" which should not contain a folder named "meilidu")
+3. Change your **_config.yml**: `theme: meilidu`
+
+## Features
+
+We have a few features you can configure and some that need to be enabled first. Check out the [Demo](https://meilidu.github.io/) to see them all in action.
+
+### Widgets
+
+Add an array of all widgets you want to display in the footer in MeiliDus `_config.yml`. These should be the names of files in the `layout/_widgets` folder. A widget should always be wrapped in an *footer__element*, like such:
+
+```html
+<div class="footer__element">
+	<p>Hi there, <br />welcome to my Blog glad you found it. Have a look around, will you?</p>
+</div>
+```
+
+### Read more
+
+You can change the text of "read more" links by setting the `readMore` option in MeiliDus `_config.yml`.
+
+```yml
+readMore: ...read more
+```
+
+### RSS
+
+You can set the link to you RSS feed in MeiliDus `_config.yml`.
+
+```yml
+rss: /atom.xml
+```
+
+You also need to install the [feed generator](https://github.com/hexojs/hexo-generator-feed) for this to work.
+
+```bash
+npm install hexo-generator-feed --save
+```
+
+Make sure to use the `--save` option and run this in the root folder of your repository as it won't work otherwise.
+
+### Tags page
+
+To activate the tags page create a `source/tags/index.md` with the following content.
+
+```markdown
+title: "Tags"
+layout: "tags"
+---
+```
+
+### Categories page
+
+Activating the categories page is similar to tags, create a `source/categories/index.md` with the following content.
+
+```markdown
+title: "Categories"
+layout: "categories"
+---
+```
+
+### About page
+
+Like any other page create a folder with the name of the page and an `index.md` file in it to have an about page. The most basic about page in `source/about/index.md` might look like this.
+
+```markdown
+title: About
+layout: page
+---
+
+This is a page about pages. It is the mother of all pages and pageception.
+```
+
+## Good to know
+
+#### Absolute URLs
+
+Hexo itself and the MeiliDu theme use a lot of absolute URLs (those starting with `/something`). Due to this you can only run your blog on a domain or subdomain but not as something like `domain.com/blog/`. To run a blog on GitHub check out [User pages](https://help.github.com/articles/user-organization-and-project-pages/) in the GitHub documentation.
+
+#### Using GitHub to host
+
+You can host websites for free on GitHub. The [Demo for MeiliDu](https://meilidu.github.io/) is a great example of this. I use [Travis](https://travis-ci.org/) to automate the generation of static files whenever we push to the master branch. Check out this [travis config file](https://gist.github.com/HoverBaum/d11361337d2c59f0de591c9c9390c1a9), it comes with explanation on how to use it. Personally I found it easiest to have a repo that contains the blog (this one) and one that is only there to get the page going. Travis then gets the current version, generates all files and pushes to the website repo.

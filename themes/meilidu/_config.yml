@@ -5,10 +5,6 @@ widgets:
 rss: /atom.xml
 
 readMore: ...read more
-fancybox: true
-
-imageCaption:
-  enable: true #false to disable
 
 feed:
   type: atom
