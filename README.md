@@ -12,6 +12,10 @@ A simple, text focused theme for Hexo. Bringing your readers attention to what i
 2. Unpack it into your **themes** folder. (You should now have a folder in your themes folder named "meilidu" which should not contain a folder named "meilidu")
 3. Change your **_config.yml**: `theme: meilidu`
 
+## Get help
+
+Below is a documentation of all features and how to use them as well as some *good to know* points. If you have any further questions or suggestions please open an issue.
+
 ## Features
 
 We have a few features you can configure and some that need to be enabled first. Check out the [Demo](https://meilidu.github.io/) to see them all in action.
