@@ -30,7 +30,6 @@ install:
 before_script:
 - git config --global user.name 'Travis'
 - git config --global user.email 'travis@no-email.com'
-# - git clone git://github.com/heroicyang/hexo-theme-modernist.git themes/modernist
 
 script:
 - hexo generate
