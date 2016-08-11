@@ -2,7 +2,8 @@
 
 > a beautiful read
 
-A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts. Check out the [Demo](https://meilidu.github.io/)
+A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts.  
+Check out the [Demo](https://meilidu.github.io/)
 
 ![MeiliDu responsive showcase.](gitHubAssets/showcase.png)
 
