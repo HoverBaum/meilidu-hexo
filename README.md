@@ -97,7 +97,7 @@ This is a page about pages. It is the mother of all pages and pageception.
 
 It can have any size really. It will always fill half of the screens height when the user first arrives on the page. Simply replace `meilidu/source/img/header.jpg` with your own file.
 
-//TODO add link to default header here.
+The default header is from [unspalsh](https://unsplash.com/search/landscape%20mountain?photo=Ni4NgA64TFQ), a picture by [Alberto Restifo](https://unsplash.com/@albertorestifo).
 
 
 ## Good to know
