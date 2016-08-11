@@ -4,6 +4,11 @@
 
 A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts. Check out the [Demo](https://meilidu.github.io/)
 
+**ALMOST** a production ready version.
+TODO:
+- [ ] Use time format from config file
+- [ ] Somehow navigation on top without distracting people
+
 ![MeiliDu responsive showcase.](gitHubAssets/showcase.png)
 
 ## Get started
@@ -12,9 +17,11 @@ A simple, text focused theme for Hexo. Bringing your readers attention to what i
 2. Unpack it into your **themes** folder. (You should now have a folder in your themes folder named "meilidu" which should not contain a folder named "meilidu")
 3. Change your **_config.yml**: `theme: meilidu`
 
-## Get help
+## Get help and involved
 
 Below is a documentation of all features and how to use them as well as some *good to know* points. If you have any further questions or suggestions please open an issue.
+
+The issues are open to anyone looking for help or wishing to make a suggestion to improve the theme.
 
 ## Features
 
@@ -86,6 +93,13 @@ layout: page
 This is a page about pages. It is the mother of all pages and pageception.
 ```
 
+### Header
+
+It can have any size really. It will always fill half of the screens height when the user first arrives on the page. Simply replace `meilidu/source/img/header.jpg` with your own file.
+
+//TODO add link to default header here.
+
+
 ## Good to know
 
 #### Absolute URLs
@@ -95,3 +109,11 @@ Hexo itself and the MeiliDu theme use a lot of absolute URLs (those starting wit
 #### Using GitHub to host
 
 You can host websites for free on GitHub. The [Demo for MeiliDu](https://meilidu.github.io/) is a great example of this. I use [Travis](https://travis-ci.org/) to automate the generation of static files whenever we push to the master branch. Check out this [travis config file](https://gist.github.com/HoverBaum/d11361337d2c59f0de591c9c9390c1a9), it comes with explanation on how to use it. Personally I found it easiest to have a repo that contains the blog (this one) and one that is only there to get the page going. Travis then gets the current version, generates all files and pushes to the website repo.
+
+#### Why an Apple showcase???
+
+Because two minutes of googleing found this [PSD showcase](http://www.pixeden.com/psd-web-elements/modern-psd-responsive-showcase) so that is what I went with.
+
+## Blogs using MeiliDu
+
+You are using MeiliDu for your blog? That is awesome! Let us know about it with a pull request and be featured here as an example for people to see how MeiliDu looks in the wild.
