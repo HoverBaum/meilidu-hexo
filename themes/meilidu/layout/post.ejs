@@ -6,24 +6,26 @@
 	<% } %>
 	<div class="article__infos">
 		<span class="article__date"><%- page.date.format('L') %></span><br />
-		<span class="article__category">
-			<%- list_categories(page.categories, {
-			  show_count: false,
-			  class: 'article-category',
-			  style: 'none',
-			  separator: ' > '
-			}) %>
-		</span><br />
-		<span class="article__tags">
-			<% if (page.tags && page.tags.length){ %>
-			  <%- list_tags(page.tags, {
-			    show_count: false,
-			    class: 'article__tag',
-				style: 'none',
-				separator: ' '
-			  }) %>
-			<% } %>
-		</span>
+		<% if (page.categories && page.categories.length){ %>
+			<span class="article__category">
+				<%- list_categories(page.categories, {
+				  show_count: false,
+				  class: 'article-category',
+				  style: 'none',
+				  separator: ' > '
+				}) %>
+			</span><br />
+		<% } %>
+		<% if (page.tags && page.tags.length){ %>
+			<span class="article__tags">
+			  	<%- list_tags(page.tags, {
+				    show_count: false,
+				    class: 'article__tag',
+					style: 'none',
+					separator: ' '
+			  	}) %>
+			</span>
+		<% } %>
 	</div>
 
 	<% if (page.photos && page.photos.length){ %>
