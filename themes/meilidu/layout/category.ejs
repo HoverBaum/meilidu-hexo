@@ -1,0 +1,21 @@
+<% const category = page.path.split('/')[1] %>
+
+<h1>#<%- category %></h1>
+
+
+
+<ul class="archive">
+		<li class="archive__year archive__expendable archive__expendable_disabled">
+			<ul>
+			<% site.posts.forEach(post => { %>
+				<% for(let key in post.categories.data) { %>
+					<% let postCategory = post.categories.data[key].name %>
+					<% if(postCategory === category) { %>
+						<li class="archive__entry"><a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
+					<% } %>
+
+				<% } %>
+			<% }) %>
+			</ul>
+		</li>
+</ul>

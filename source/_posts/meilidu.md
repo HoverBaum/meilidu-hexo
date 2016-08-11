@@ -1,5 +1,7 @@
 title:  MeiliDu
 date: 2016-08-11 10:31:06
+categories:
+  - meta
 tags:
   - Hexo
   - Theme

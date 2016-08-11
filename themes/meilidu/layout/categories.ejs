@@ -1,14 +1,14 @@
 <h1><%- page.title %></h1>
 
 <ul class="archive">
-	<% for(let key in site.tags.data) { %>
-		<% let tag = site.tags.data[key].name %>
+	<% for(let key in site.categories.data) { %>
+		<% let tag = site.categories.data[key].name %>
 		<li class="archive__year archive__expendable">
 			<span><%- tag %></span>
 			<ul>
 			<% site.posts.forEach(post => { %>
-				<% for(let key in post.tags.data) { %>
-					<% let postTag = post.tags.data[key].name %>
+				<% for(let key in post.categories.data) { %>
+					<% let postTag = post.categories.data[key].name %>
 					<% if(postTag === tag) { %>
 						<li class="archive__entry"><a href="<%- url_for(post.path) %>"><%- post.title %></a></li>
 					<% } %>
