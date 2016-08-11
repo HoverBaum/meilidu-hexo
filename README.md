@@ -7,7 +7,6 @@ A simple, text focused theme for Hexo. Bringing your readers attention to what i
 **ALMOST** a production ready version.
 TODO:
 - [ ] Use time format from config file
-- [ ] Somehow navigation on top without distracting people
 
 ![MeiliDu responsive showcase.](gitHubAssets/showcase.png)
 
@@ -99,6 +98,9 @@ It can have any size really. It will always fill half of the screens height when
 
 The default header is from [unspalsh](https://unsplash.com/search/landscape%20mountain?photo=Ni4NgA64TFQ), a picture by [Alberto Restifo](https://unsplash.com/@albertorestifo).
 
+### Top menu
+
+To customize the menu at the top of the page simply change MeiliDus `_config.yml` and add your links to the `menu` object.
 
 ## Good to know
 

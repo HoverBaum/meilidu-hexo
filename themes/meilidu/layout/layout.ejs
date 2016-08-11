@@ -14,6 +14,11 @@
 <body>
 
 	<header class="header">
+		<nav class="header__nav">
+			<% for(let key in theme.menu) { %>
+				<a href="<%= theme.menu[key] %>" class="header__link"><%= key %></a>
+			<% } %>
+		</nav>
 		<h1 class="header__title"><a href="<%- url_for() %>"><%= config.title %></a></h1>
 		<h2 class="header__subtitle"><%- config.subtitle %></h2>
 	</header>

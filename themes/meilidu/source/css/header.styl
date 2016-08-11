@@ -26,7 +26,7 @@ filter(n)
 	margin: 0
 	padding: 0
 	font-weight: 300
-	margin-top: 15vh
+	margin-top: 10vh
 
 .header__title a
 	color: headerColor
@@ -42,3 +42,16 @@ filter(n)
 	color: headerColor
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
 	font-weight: 300
+
+.header__nav
+	width: contentWidth
+	margin: 0 auto
+	margin-top: 0.5rem
+
+.header__link
+	margin: 0 1rem
+	color: headerColor
+	opacity: 0.9
+	&:hover
+		link-underline(rgba(0,0,0,0), headerColor, headerColor)
+		opacity: 1
