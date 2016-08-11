@@ -38,10 +38,10 @@ script:
 after_success:
 - mkdir .deploy
 - cd .deploy
-- git clone --depth 1 --branch gh-pages --single-branch $DEPLOY_REPO . || (git init && git remote add -t gh-pages origin $DEPLOY_REPO)
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init && git remote add -t master origin $DEPLOY_REPO)
 - rm -rf ./*
 - cp -r ../public/* .
 - git add -A .
 - git commit -m 'Site updated'
-- git branch -m gh-pages
-- git push -q -u origin gh-pages
+- git branch -m master
+- git push -q -u origin master
