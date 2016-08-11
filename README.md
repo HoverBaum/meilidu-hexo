@@ -1,8 +1,5 @@
 # MeiliDu
 
-Theme for Hexo.
+> a beautiful read
 
-todo
-
-- [ ] categories page
-	- [ ] page for a single category
+A simple, text focused theme for Hexo. Bringing your readers attention to what is most import: your posts.
