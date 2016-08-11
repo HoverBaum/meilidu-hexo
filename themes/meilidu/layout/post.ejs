@@ -46,4 +46,10 @@
 	<% } else { %>
 		<%- page.content %>
 	<% } %>
+
+	<% if(!locals.archive) { %>
+		<span class="different-posts"><a href="<%- url_for(page.path) %>" onclick="window.history.go(-1); return false;">⬅️ Go back </a></span>
+
+	<% } %>
+
 </article>
