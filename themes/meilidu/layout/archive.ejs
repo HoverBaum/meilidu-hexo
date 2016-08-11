@@ -30,8 +30,9 @@
 
 
 <ul class="archive">
+	<% let firstYear = true %>
 	<% archiveLinks.forEach((elm, year) => { %>
-		<li class="archive__year archive__expendable">
+		<li class="archive__year archive__expendable <%- firstYear ? '' : 'archive__expendable_collapsed'%>">
 			<span><%- year %></span>
 			<ul>
 				<% elm.forEach((monthElm, month) => { %>
@@ -43,9 +44,11 @@
 							<% }) %>
 						</ul>
 					</li>
+
 				<% }) %>
 			</ul>
 		</li>
+		<% if(firstYear) firstYear = false %>
 	<% }) %>
 </ul>
 
