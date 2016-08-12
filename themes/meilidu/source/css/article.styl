@@ -12,6 +12,9 @@ article
 		width: 90%
 		h1
 			overflow: hidden // This is for when someone just puts a long url as the title....
+		p
+			a
+				word-break: normal
 	p, blockquote, figure
 		a
 			word-break: break-all
@@ -38,6 +41,10 @@ article a
 
 article:hover .article__read-more-link
 	link-underline(backgroundColor, mainColor, mainColor)
+
+@media only screen and (max-width: breakMediumEnd)
+	article .article__read-more-link
+		link-underline(backgroundColor, mainColor, mainColor)
 
 article h1 a:hover
 	link-underline(backgroundColor, highlightColor, highlightColor)

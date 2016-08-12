@@ -18,6 +18,10 @@ filter(n)
 	filter(saturate(120%))
 	position: relative
 
+@media only screen and (orientation: landscape) and (max-width: breakMediumEnd)
+	.header
+		height: 100vh
+
 .header__title
 	font-size: 6rem
 	text-align: center
@@ -28,6 +32,12 @@ filter(n)
 	font-weight: 300
 	margin-top: 10vh
 
+@media only screen and (max-width: breakMobile)
+	.header__title
+		font-size: 4rem
+	.header__subtitle
+		font-size: 1.5rem
+
 .header__title a
 	color: headerColor
 
@@ -37,7 +47,7 @@ filter(n)
 .header__subtitle
 	margin: 0
 	padding: 0
-	font-size: 2em
+	font-size: 2rem
 	text-align: center
 	color: headerColor
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5)
@@ -50,8 +60,7 @@ filter(n)
 
 .header__link
 	margin: 0 1rem
-	color: headerColor
-	opacity: 0.9
+	opacity: 0.6
 	&:hover
-		link-underline(rgba(0,0,0,0), headerColor, headerColor)
+		link-underline(rgba(0,0,0,0), textColor, textColor)
 		opacity: 1

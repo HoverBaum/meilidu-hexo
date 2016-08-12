@@ -4,8 +4,8 @@ menu:
  RSS: /atom.xml
 
 widgets:
- - site_links
  - greeting
+ - site_links
 
 rss: /atom.xml
 

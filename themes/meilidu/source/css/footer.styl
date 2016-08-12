@@ -7,13 +7,15 @@ footerTextColor = backgroundColor
 .footer
 	background-color: footerBackgroundColor
 	color: footerTextColor
-	padding: 2rem 0
+	padding-top: 2rem
+	padding-bottom: 1rem
 	display: flex
 	flex-direction: row
 	justify-content: center
 
 .footer p
 	margin: 0
+	max-width: 100%
 
 .footer-content
 	display: flex
@@ -26,6 +28,8 @@ footerTextColor = backgroundColor
 	padding: 1rem
 	width: (contentWidth / 4)
 	box-sizing: border-box
+	h5
+		margin-top: 0
 
 @media only screen and (max-width: breakMobile)
 	.footer__element
@@ -44,7 +48,13 @@ footerTextColor = backgroundColor
 .footer-links__link
 	list-style-type: none
 
-.footer-links__link a
+.footer a
 	link-underline(footerBackgroundColor, footerTextColor, footerTextColor)
 	&:hover
 		link-underline(footerBackgroundColor, mainColor, mainColor)
+
+.footer-credit
+	margin-top: 2rem
+	width: 100%
+	display: block
+	text-align: center

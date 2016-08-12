@@ -7,19 +7,19 @@ Check out the [Demo](https://meilidu.github.io/)
 
 ![MeiliDu responsive showcase.](gitHubAssets/showcase.png)
 
-## Get started
+# Get started
 
 1. Get the [latest release](https://github.com/HoverBaum/meilidu-hexo/releases/latest), simply download the file **meilidu.zip**.
 2. Unpack it into your **themes** folder. (You should now have a folder in your themes folder named "meilidu" which should not contain a folder named "meilidu")
 3. Change your **_config.yml**: `theme: meilidu`
 
-## Get help and involved
+# Get help and involved
 
 Below is a documentation of all features and how to use them as well as some *good to know* points. If you have any further questions or suggestions please open an issue.
 
 The issues are open to anyone looking for help or wishing to make a suggestion to improve the theme.
 
-## Features
+# Features
 
 We have a few features you can configure and some that need to be enabled first. Check out the [Demo](https://meilidu.github.io/) to see them all in action.
 
@@ -99,7 +99,7 @@ The default header is from [unspalsh](https://unsplash.com/search/landscape%20mo
 
 To customize the menu at the top of the page simply change MeiliDus `_config.yml` and add your links to the `menu` object.
 
-## Good to know
+# Good to know
 
 #### Absolute URLs
 
@@ -113,6 +113,6 @@ You can host websites for free on GitHub. The [Demo for MeiliDu](https://meilidu
 
 Because two minutes of googleing found this [PSD showcase](http://www.pixeden.com/psd-web-elements/modern-psd-responsive-showcase) so that is what I went with.
 
-## Blogs using MeiliDu
+# Blogs using MeiliDu
 
 You are using MeiliDu for your blog? That is awesome! Let us know about it with a pull request and be featured here as an example for people to see how MeiliDu looks in the wild.
