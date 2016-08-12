@@ -89,6 +89,15 @@ layout: page
 This is a page about pages. It is the mother of all pages and pageception.
 ```
 
+### Archives
+
+If you archive is only showing the current years posts try adding the following yml to your sites `_config.yml` (not the one in meilidus folder).
+
+```yml
+archive_generator:
+  per_page: 0
+```
+
 ### Header
 
 It can have any size really. It will always fill half of the screens height when the user first arrives on the page. Simply replace `meilidu/source/img/header.jpg` with your own file.
@@ -97,7 +106,7 @@ The default header is from [unspalsh](https://unsplash.com/search/landscape%20mo
 
 ### Top menu
 
-To customize the menu at the top of the page simply change MeiliDus `_config.yml` and add your links to the `menu` object.
+To customize the menu at the top of the page simply change MeiliDus `_config.yml` and add your links to the `menu` object. Remove everything from it to hide the top menu.
 
 # Good to know
 
