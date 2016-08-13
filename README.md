@@ -125,3 +125,5 @@ Because two minutes of googleing found this [PSD showcase](http://www.pixeden.co
 # Blogs using MeiliDu
 
 You are using MeiliDu for your blog? That is awesome! Let us know about it with a pull request and be featured here as an example for people to see how MeiliDu looks in the wild.
+
+- [HoverBaum](http://hoverbaum.gitlab.io/)
