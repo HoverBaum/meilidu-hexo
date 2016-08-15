@@ -45,6 +45,7 @@ script:
 - git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . # get the master branch
 - rm -rf ./*
 - cp -r ../public/* . # copy generated site over
+- cp ../README.md README.md # also copy readme so repo isn't so empty
 - git add -A . # add all the things
 - git commit -m 'Site updated'
 - git branch -m master
