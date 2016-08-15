@@ -37,7 +37,7 @@ script:
 - mkdir .predeploy # make a folder for pre deploy
 - cd .predeploy
 - git clone --depth 1 --branch development --single-branch $DEPLOY_REPO . # get the files from the development branch
-- cp - r ../.theme themes/meilidu/ #copy theme over
+- cp -r ../.theme themes/meilidu/ #copy theme over
 - npm install
 - hexo generate #generate site
 - mkdir .deploy
