@@ -32,15 +32,22 @@ before_script:
 - git config --global user.email 'travis@no-email.com'
 
 script:
-- hexo generate
 
 after_success:
+- mkdir .theme
+- TARGETDIR='.theme';for file in *;do test "$file" != "$TARGETDIR" && cp -r "$file" "$TARGETDIR/";done #create a folder with theme in it
+- mkdir .predeploy # make a folder for pre deploy
+- cd .predeploy
+- git clone --depth 1 --branch development --single-branch $DEPLOY_REPO . # get the files from the development branch
+- cp - r ../.theme themes/meilidu/ #copy theme over
+- npm install
+- hexo generate #generate site
 - mkdir .deploy
-- cd .deploy
-- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . || (git init && git remote add -t master origin $DEPLOY_REPO)
+- cd .deploy # create folder for deploy
+- git clone --depth 1 --branch master --single-branch $DEPLOY_REPO . # get the master branch
 - rm -rf ./*
-- cp -r ../public/* .
-- git add -A .
+- cp -r ../public/* . # copy generated site over
+- git add -A . # add all the things
 - git commit -m 'Site updated'
 - git branch -m master
-- git push -q -u origin master
+- git push -q -u origin master # push new version
