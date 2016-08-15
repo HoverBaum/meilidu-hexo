@@ -31,7 +31,7 @@ before_script:
 - git config --global user.name 'Travis'
 - git config --global user.email 'travis@no-email.com'
 
-after_success:
+script:
 - mkdir .theme
 - TARGETDIR='.theme';for file in *;do test "$file" != "$TARGETDIR" && cp -r "$file" "$TARGETDIR/";done #create a folder with theme in it
 - mkdir .predeploy # make a folder for pre deploy
