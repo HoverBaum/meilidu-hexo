@@ -9,13 +9,15 @@ Check out the [Demo](https://meilidu.github.io/)
 
 # Get started
 
+Make sure your **Node version** is 6.x or above as the theme uses some ES6 syntax.
+
 1. Get the [latest release](https://github.com/HoverBaum/meilidu-hexo/releases/latest), simply download the file **meilidu.zip**. (see below for cloning)
 2. Unpack it into your **themes** folder. (You should now have a folder in your themes folder named "meilidu" which should not contain a folder named "meilidu")
 3. Change your **_config.yml**: `theme: meilidu`
 
 ### Alternative: clone
 
-You can also manage the theme as a subproject of your website. Simply run the following in the root directory of your project.
+You can also manage the theme as a subproject of your website. Simply run the following in the root directory of your project. After that change the theme property in your projects `_config.yml`.
 
 ```bash
 git clone https://github.com/HoverBaum/meilidu-hexo.git themes/meilidu
