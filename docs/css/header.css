@@ -1,0 +1,133 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-familiy: "Inconsolata";
+  src: url("fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+.header {
+  background-image: url("../img/header.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  display: block;
+  box-sizing: border-box;
+  -webkit-filter: saturate(120%);
+  -moz-filter: saturate(120%);
+  filter: saturate(120%);
+  position: relative;
+}
+@media only screen and (orientation: landscape) and (max-width: 64em) {
+  .header {
+    height: 100vh;
+  }
+}
+.header__title {
+  font-size: 6rem;
+  text-align: center;
+  color: #f9fafa;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  margin-top: 10vh;
+}
+@media only screen and (max-width: 40em) {
+  .header__title {
+    font-size: 4rem;
+  }
+  .header__subtitle {
+    font-size: 1.5rem;
+  }
+}
+.header__title a {
+  color: #f9fafa;
+}
+.header__title a:hover {
+  text-shadow: 0.03em 0 rgba(0,0,0,0), -0.03em 0 rgba(0,0,0,0), 0 0.03em rgba(0,0,0,0), 0 -0.03em rgba(0,0,0,0), 0.06em 0 rgba(0,0,0,0), -0.06em 0 rgba(0,0,0,0), 0.09em 0 rgba(0,0,0,0), -0.09em 0 rgba(0,0,0,0), 0.12em 0 rgba(0,0,0,0), -0.12em 0 rgba(0,0,0,0), 0.15em 0 rgba(0,0,0,0), -0.15em 0 rgba(0,0,0,0);
+  background-image: linear-gradient(#f9fafa, #f9fafa);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #f9fafa;
+  text-decoration: none;
+}
+.header__title a:hover::selection {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background: #f9fafa;
+}
+.header__title a:hover::-moz-selection {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background: #f9fafa;
+}
+.header__title a:hover *,
+.header__title a:hover *:after,
+.header__title a:hover:after,
+.header__title a:hover *:before,
+.header__title a:hover:before {
+  text-shadow: none;
+}
+.header__title a:hover:visited {
+  color: #f9fafa;
+}
+.header__subtitle {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+  text-align: center;
+  color: #f9fafa;
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  font-weight: 300;
+}
+.header__nav {
+  width: 50rem;
+  max-width: 100%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+.header__link {
+  margin: 0 1rem;
+  opacity: 0.6;
+}
+.header__link:hover {
+  text-shadow: 0.03em 0 rgba(0,0,0,0), -0.03em 0 rgba(0,0,0,0), 0 0.03em rgba(0,0,0,0), 0 -0.03em rgba(0,0,0,0), 0.06em 0 rgba(0,0,0,0), -0.06em 0 rgba(0,0,0,0), 0.09em 0 rgba(0,0,0,0), -0.09em 0 rgba(0,0,0,0), 0.12em 0 rgba(0,0,0,0), -0.12em 0 rgba(0,0,0,0), 0.15em 0 rgba(0,0,0,0), -0.15em 0 rgba(0,0,0,0);
+  background-image: linear-gradient(#33474d, #33474d);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #33474d;
+  text-decoration: none;
+  opacity: 1;
+}
+.header__link:hover::selection {
+  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
+  background: #33474d;
+}
+.header__link:hover::-moz-selection {
+  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
+  background: #33474d;
+}
+.header__link:hover *,
+.header__link:hover *:after,
+.header__link:hover:after,
+.header__link:hover *:before,
+.header__link:hover:before {
+  text-shadow: none;
+}
+.header__link:hover:visited {
+  color: #33474d;
+}

@@ -1,0 +1,20 @@
+{
+  "name": "meilidu-hexo",
+  "version": "1.0.0",
+  "description": "[![Project Status: Active - The project has reached a stable, usable state and is being actively developed.](http://www.repostatus.org/badges/latest/active.svg)](http://www.repostatus.org/#active)",
+  "main": "index.js",
+  "scripts": {
+    "demo:install": "cd demo-site && npm i",
+    "demo:build": "cd demo-site && npm run build",
+    "demo:copy": "cp -r demo-site/public docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HoverBaum/meilidu-hexo.git"
+  },
+  "author": "Hendrik Wallbaum <mail@hendrikwallbaum.de>",
+  "bugs": {
+    "url": "https://github.com/HoverBaum/meilidu-hexo/issues"
+  },
+  "homepage": "https://github.com/HoverBaum/meilidu-hexo#readme"
+}

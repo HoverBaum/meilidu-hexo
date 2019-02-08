@@ -1,0 +1,187 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-familiy: "Inconsolata";
+  src: url("fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+article {
+  width: 50rem;
+  max-width: 100%;
+  text-align: justify;
+  margin: 0 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+@media only screen and (max-width: 40em) {
+  article {
+    width: 90%;
+  }
+  article h1 {
+    overflow: hidden;
+  }
+  article p a {
+    word-break: normal;
+  }
+  p a,
+  blockquote a,
+  figure a {
+    word-break: break-all;
+  }
+}
+article h1 {
+  font-family: "Noto Serif", serif;
+}
+h1,
+h2,
+strong {
+  color: #3c4447;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin-top: 1em;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+article h1 a {
+  background: inherit;
+}
+ul,
+ol {
+  margin: 0.5rem 0;
+}
+li {
+  padding: 0.2rem 0;
+}
+.figure {
+  margin: 2rem 0;
+}
+.figure__caption {
+  text-align: center;
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+  border-radius: 0.2rem;
+}
+.highlight {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+blockquote {
+  color: #3c4447;
+  border-left: 0.7rem solid #2a4a54;
+  margin: 2rem 1rem;
+  padding: 0.5rem 1rem;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+blockquote:before {
+  color: #2a4a54;
+  content: "\201C" /*Unicode for Left Double Quote*/;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+blockquote p {
+  display: inline;
+  font-family: "Noto Serif", serif;
+}
+blockquote cite:before {
+  content: "\2014 \2009";
+}
+article:hover blockquote a {
+  color: currentColor;
+}
+table {
+  width: 100%;
+  border-spacing: 0;
+}
+table th {
+  border-bottom: 1px solid #3c4447;
+  padding: 0.8rem;
+}
+table td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #d6dbdc;
+}
+table tbody tr:hover {
+  background-color: #e4f7fe;
+}
+.article__tag-link:before {
+  content: '#';
+}
+.article__infos {
+  font-size: 0.7rem;
+  position: absolute;
+  left: -8.5rem;
+  width: 8rem;
+  text-align: right;
+}
+.article__infos a {
+  text-shadow: none;
+  background: inherit;
+}
+@media only screen and (max-width: 64em) {
+  .article__infos {
+    position: relative;
+    left: 0;
+    text-align: left;
+    width: auto;
+  }
+  .article__infos br {
+    display: none;
+  }
+  .article__infos span {
+    margin-right: 1em;
+  }
+}
+.post__info span {
+  margin-right: 1em;
+}
+iframe {
+  width: 100%;
+  height: 28.125rem;
+}
+.pullquote {
+  width: 45%;
+  margin: 0;
+}
+.pullquote.left {
+  margin-left: 0.5em;
+  margin-right: 1em;
+  float: left;
+}
+.pullquote.right {
+  margin-left: 1em;
+  margin-right: 0.5em;
+  float: right;
+}
+article .different-posts {
+  margin-top: 4rem;
+}

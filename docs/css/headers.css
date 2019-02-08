@@ -1,0 +1,30 @@
+/*
+  Calculate modular scalled font-sizes for headlines in Stylus
+  "Modular scale refers to a series of harmonious numbers
+  that relate to one another in a meaningful way."
+  Inspired after reading http://typographyhandbook.com/#font-sizing
+  Build after http://www.modularscale.com/
+
+  https://gist.github.com/HoverBaum/889463ed0a57014b68302645b44cd192
+ */
+html {
+  font-size: 1em;
+}
+h1 {
+  font-size: 3.0517578125em;
+}
+h2 {
+  font-size: 2.44140625em;
+}
+h3 {
+  font-size: 1.953125em;
+}
+h4 {
+  font-size: 1.5625em;
+}
+h5 {
+  font-size: 1.25em;
+}
+p {
+  font-size: 1em;
+}

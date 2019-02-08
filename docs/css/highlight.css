@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-familiy: "Inconsolata";
+  src: url("fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+article pre,
+article .highlight {
+  background: #ebefef;
+  padding: 15px;
+  overflow: auto;
+  color: #333;
+}
+article pre a,
+article .highlight a {
+  text-shadow: 0.03em 0 #ebefef, -0.03em 0 #ebefef, 0 0.03em #ebefef, 0 -0.03em #ebefef, 0.06em 0 #ebefef, -0.06em 0 #ebefef, 0.09em 0 #ebefef, -0.09em 0 #ebefef, 0.12em 0 #ebefef, -0.12em 0 #ebefef, 0.15em 0 #ebefef, -0.15em 0 #ebefef;
+  background-image: linear-gradient(#0ba6d7, #0ba6d7);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #0ba6d7;
+  text-decoration: none;
+}
+article pre a::selection,
+article .highlight a::selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+article pre a::-moz-selection,
+article .highlight a::-moz-selection {
+  text-shadow: 0.03em 0 #0ba6d7, -0.03em 0 #0ba6d7, 0 0.03em #0ba6d7, 0 -0.03em #0ba6d7, 0.06em 0 #0ba6d7, -0.06em 0 #0ba6d7, 0.09em 0 #0ba6d7, -0.09em 0 #0ba6d7, 0.12em 0 #0ba6d7, -0.12em 0 #0ba6d7, 0.15em 0 #0ba6d7, -0.15em 0 #0ba6d7;
+  background: #0ba6d7;
+}
+article pre a *,
+article .highlight a *,
+article pre a *:after,
+article .highlight a *:after,
+article pre a:after,
+article .highlight a:after,
+article pre a *:before,
+article .highlight a *:before,
+article pre a:before,
+article .highlight a:before {
+  text-shadow: none;
+}
+article pre a:visited,
+article .highlight a:visited {
+  color: #0ba6d7;
+}
+article .highlight .gutter pre,
+article .gist .gist-file .gist-data .line-numbers {
+  color: #666;
+}
+code {
+  background-color: #ebefef;
+  border-radius: 0.2em;
+}
+.highlight .line.marked {
+  background-color: #d1dada;
+}
+article pre,
+article code {
+  font-family: "Inconsolata", monospace;
+}
+article code {
+  background: color-background;
+  text-shadow: 0 1px #fff;
+  padding: 0 0.3em;
+}
+article pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+}
+article .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+article .highlight table {
+  margin: 0;
+  width: auto;
+}
+article .highlight td {
+  border: none;
+  padding: 0;
+}
+article .highlight figcaption {
+  font-size: 0.85em;
+  color: #999;
+  line-height: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+article .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+article .gist {
+  border-style: solid;
+  border-color: #99c0cc;
+  border-width: 1px 0;
+  background: #f9fafa;
+}
+article .gist .gist-file {
+  border: none;
+  font-family: font-mono;
+  margin: 0;
+}
+article .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+article .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+article .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+article .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+article .gist .gist-file .gist-meta {
+  background: #f9fafa;
+  color: #999;
+  font: 0.85em font-sans;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: article-padding;
+}
+pre .comment,
+pre .title {
+  color: #999;
+}
+pre .variable,
+pre .attribute,
+pre .tag,
+pre .regexp,
+pre .ruby .constant,
+pre .xml .tag .title,
+pre .xml .pi,
+pre .xml .doctype,
+pre .html .doctype,
+pre .css .id,
+pre .css .class,
+pre .css .pseudo {
+  color: #a626a4;
+}
+pre .number,
+pre .preprocessor,
+pre .built_in,
+pre .literal,
+pre .params,
+pre .constant {
+  color: #986801;
+}
+pre .class,
+pre .ruby .class .title,
+pre .css .rules .attribute {
+  color: #50a14f;
+}
+pre .string,
+pre .value,
+pre .inheritance,
+pre .header,
+pre .ruby .symbol,
+pre .xml .cdata {
+  color: #50a14f;
+}
+pre .css .hexcolor {
+  color: #6cc;
+}
+pre .function,
+pre .python .decorator,
+pre .python .title,
+pre .ruby .function .title,
+pre .ruby .title .keyword,
+pre .perl .sub,
+pre .javascript .title,
+pre .coffeescript .title {
+  color: #a626a4;
+}
+pre .keyword,
+pre .javascript .function {
+  color: #a626a4;
+}

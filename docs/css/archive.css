@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Regular.ttf");
+  font-weight: normal;
+}
+@font-face {
+  font-family: "Noto Sans";
+  src: url("fonts/Noto_Sans/NotoSans-Italic.ttf");
+  font-style: italic;
+}
+@font-face {
+  font-family: "Noto Serif";
+  src: url("fonts/Noto_Serif/NotoSerif-Regular.ttf");
+  font-style: normal;
+}
+@font-face {
+  font-familiy: "Inconsolata";
+  src: url("fonts/Inconsolata/Inconsolata-Regular.ttf");
+}
+.archive {
+  width: 50rem;
+  max-width: 100%;
+  padding: 3rem;
+  display: block;
+  font-size: 2.369rem;
+}
+.archive li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.archive__year > span:hover {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background-image: linear-gradient(#33474d, #33474d);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #33474d;
+  text-decoration: none;
+}
+.archive__year > span:hover::selection {
+  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
+  background: #33474d;
+}
+.archive__year > span:hover::-moz-selection {
+  text-shadow: 0.03em 0 #33474d, -0.03em 0 #33474d, 0 0.03em #33474d, 0 -0.03em #33474d, 0.06em 0 #33474d, -0.06em 0 #33474d, 0.09em 0 #33474d, -0.09em 0 #33474d, 0.12em 0 #33474d, -0.12em 0 #33474d, 0.15em 0 #33474d, -0.15em 0 #33474d;
+  background: #33474d;
+}
+.archive__year > span:hover *,
+.archive__year > span:hover *:after,
+.archive__year > span:hover:after,
+.archive__year > span:hover *:before,
+.archive__year > span:hover:before {
+  text-shadow: none;
+}
+.archive__year > span:hover:visited {
+  color: #33474d;
+}
+.archive__month {
+  font-family: fonstSerif;
+  font-size: 1.777rem;
+  color: #425c64;
+}
+.archive__month > span:hover {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background-image: linear-gradient(#425c64, #425c64);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #425c64;
+  text-decoration: none;
+}
+.archive__month > span:hover::selection {
+  text-shadow: 0.03em 0 #425c64, -0.03em 0 #425c64, 0 0.03em #425c64, 0 -0.03em #425c64, 0.06em 0 #425c64, -0.06em 0 #425c64, 0.09em 0 #425c64, -0.09em 0 #425c64, 0.12em 0 #425c64, -0.12em 0 #425c64, 0.15em 0 #425c64, -0.15em 0 #425c64;
+  background: #425c64;
+}
+.archive__month > span:hover::-moz-selection {
+  text-shadow: 0.03em 0 #425c64, -0.03em 0 #425c64, 0 0.03em #425c64, 0 -0.03em #425c64, 0.06em 0 #425c64, -0.06em 0 #425c64, 0.09em 0 #425c64, -0.09em 0 #425c64, 0.12em 0 #425c64, -0.12em 0 #425c64, 0.15em 0 #425c64, -0.15em 0 #425c64;
+  background: #425c64;
+}
+.archive__month > span:hover *,
+.archive__month > span:hover *:after,
+.archive__month > span:hover:after,
+.archive__month > span:hover *:before,
+.archive__month > span:hover:before {
+  text-shadow: none;
+}
+.archive__month > span:hover:visited {
+  color: #425c64;
+}
+.archive .archive__entry {
+  font-family: "Noto Sans", sans-serif;
+  list-style-type: disc;
+  font-size: 1.333rem;
+  margin-left: 1rem;
+}
+.archive__entry > a {
+  color: #51717b;
+}
+.archive__entry > a:hover {
+  text-shadow: 0.03em 0 #f9fafa, -0.03em 0 #f9fafa, 0 0.03em #f9fafa, 0 -0.03em #f9fafa, 0.06em 0 #f9fafa, -0.06em 0 #f9fafa, 0.09em 0 #f9fafa, -0.09em 0 #f9fafa, 0.12em 0 #f9fafa, -0.12em 0 #f9fafa, 0.15em 0 #f9fafa, -0.15em 0 #f9fafa;
+  background-image: linear-gradient(#51717b, #51717b);
+  background-size: 1px 1px;
+  background-repeat: repeat-x;
+  background-position: 0% 95%;
+  color: #51717b;
+  text-decoration: none;
+}
+.archive__entry > a:hover::selection {
+  text-shadow: 0.03em 0 #51717b, -0.03em 0 #51717b, 0 0.03em #51717b, 0 -0.03em #51717b, 0.06em 0 #51717b, -0.06em 0 #51717b, 0.09em 0 #51717b, -0.09em 0 #51717b, 0.12em 0 #51717b, -0.12em 0 #51717b, 0.15em 0 #51717b, -0.15em 0 #51717b;
+  background: #51717b;
+}
+.archive__entry > a:hover::-moz-selection {
+  text-shadow: 0.03em 0 #51717b, -0.03em 0 #51717b, 0 0.03em #51717b, 0 -0.03em #51717b, 0.06em 0 #51717b, -0.06em 0 #51717b, 0.09em 0 #51717b, -0.09em 0 #51717b, 0.12em 0 #51717b, -0.12em 0 #51717b, 0.15em 0 #51717b, -0.15em 0 #51717b;
+  background: #51717b;
+}
+.archive__entry > a:hover *,
+.archive__entry > a:hover *:after,
+.archive__entry > a:hover:after,
+.archive__entry > a:hover *:before,
+.archive__entry > a:hover:before {
+  text-shadow: none;
+}
+.archive__entry > a:hover:visited {
+  color: #51717b;
+}
+.archive__expendable {
+  margin-top: 0.5em;
+  height: auto;
+}
+.archive__expendable:before {
+  content: "▻";
+  display: inline-block;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.archive__expendable.archive__expendable_collapsed {
+  height: 1.3em;
+  overflow-y: hidden;
+}
+.archive__expendable.archive__expendable_collapsed:before {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+.archive__expendable.archive__expendable_disabled span:hover {
+  cursor: default;
+  text-shadow: none;
+  background-image: none;
+}
+.archive__expendable.archive__expendable_disabled:before {
+  content: "";
+}

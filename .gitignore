@@ -2,3 +2,4 @@ node_modules
 db.json
 public
 *.zip
+demo-site/node_modules
