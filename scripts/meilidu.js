@@ -4,7 +4,7 @@
 
  */
 
-if(process.versions.node < '6') {
+if(parseInt(process.versions.node) < 6) {
 	console.log('Your Node version is too old to use MeiliDu.')
 	console.log(`MeiliDu needs at least version 6 you are running ${process.versions.node}`)
 	console.log('\nUse "npm install -g n" to update your Node version.')
